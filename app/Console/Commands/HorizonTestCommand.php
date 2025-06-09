@@ -26,8 +26,8 @@ class HorizonTestCommand extends Command
      */
     public function handle()
     {
-        for ($i = 0; $i < 500; $i++) {
-            HorizonTestJob::dispatch();
-        }
+        $this->info("Starting queues");
+
+        HorizonTestJob::dispatch();
     }
 }
