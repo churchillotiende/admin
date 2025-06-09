@@ -22,6 +22,6 @@ class HorizonTestJob implements ShouldQueue
      */
     public function handle(): void
     {
-        sleep(0, 10);
+        sleep(rand(0, 10));
     }
 }
